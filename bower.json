@@ -1,7 +1,7 @@
 {
   "name": "prdg-file-upload",
   "main": [
-    "dist/prdg-file-upload.js"
+    "dist/prdg-file-upload.js",
     "dist/prdg-file-upload.css"
   ],
   "version": "0.1.0",
@@ -11,13 +11,14 @@
   "moduleType": [
     "globals"
   ],
-  "keywords": [],
   "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
-    "typings"
+    "typings",
+    "test",
+    "tests"
   ],
   "dependencies": {
     "angular": "~1.5",
@@ -25,5 +26,8 @@
   },
   "devDependencies": {
     "angular-translate": "^2.11.0"
-  }
+  },
+  "homepage": "https://github.com/JamesGuthrie/prdg-file-upload",
+  "description": "",
+  "private": true
 }
