@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="prdgFileUploadDemo">
+<head>
+    <meta charset="utf-8">
+    <title>Demo of file uploader</title>
+    <!-- CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" media="all" rel="stylesheet">
+    <link href="dist/prdg-file-upload.css" media="all" rel="stylesheet">
+</head>
+<!-- apply our angular app -->
+<body>
+
+    <div class="row">
+        <div class="container col-sm-6 col-sm-offset-3" ng-controller="AppController as vm">
+            <h1>Drag and drop file upload and manage</h1>
+                <prdg-file-upload url="vm.url" files="vm.oneFile" multiple="false"></prdg-file-upload>
+                <prdg-file-upload url="vm.url" files="vm.manyFiles" multiple="true"></prdg-file-upload>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="bower_components/angular/angular.min.js" type="text/javascript"></script>
+    <script src="bower_components/ng-file-upload/ng-file-upload-all.min.js" type="text/javascript"></script>
+    <script src="bower_components/angular-translate/angular-translate.min.js" type="text/javascript"></script>
+    <script src="dist/prdg-file-upload.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
+</body>
+</html>
+

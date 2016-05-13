@@ -1,0 +1,7 @@
+<div>
+    <prdg-file-manage files="vm.files"></prdg-file-manage>
+    <div ng-repeat="file in vm.uploading">
+        <prdg-file-upload-progress ufile="file"></prdg-file-upload-progress>
+    </div>
+    <prdg-file-select queue="vm.queue" multiple="vm.multiple"></prdg-file-select>
+</div>

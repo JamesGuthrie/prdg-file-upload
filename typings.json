@@ -1,0 +1,12 @@
+{
+  "name": "prdg-file-upload",
+  "version": false,
+  "ambientDependencies": {
+    "angular": "registry:dt/angular#1.5.0+20160509150441",
+    "jquery": "registry:dt/jquery#1.10.0+20160417213236",
+    "ng-file-upload": "registry:dt/ng-file-upload#0.0.0+20160317120654"
+  },
+  "dependencies": {
+    "ng-file-upload": "registry:dt/ng-file-upload#0.0.0+20160317120654"
+  }
+}

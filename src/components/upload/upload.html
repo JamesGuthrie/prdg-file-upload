@@ -1,0 +1,10 @@
+<div class="bg-white mb" ng-class="{'has-error border-danger': (uploadForm.$error.required) || (hasError() && errorMessage(schemaError()))}">
+    <small class="text-muted" ng-show="form.description" ng-bind-html="form.description"></small>
+    <div ngf-drop="vm.enqueue($files)" ngf-select="vm.enqueue($files)" type="file" ngf-multiple="vm.multiple"
+         name="file"  ng-required="vm.required"
+         ngf-drag-over-class="dragover" class="drop-box dragAndDropDescription">
+        <p class="text-center" ng-if="!vm.multiple">{{ 'modules.upload.descriptionSinglefile' | translate }}</p>
+        <p class="text-center" ng-if="vm.multiple">{{ 'modules.upload.descriptionMultifile' | translate }}</p>
+    </div>
+    <div ngf-no-file-drop>{{ 'modules.upload.dndNotSupported' | translate}}</div>
+</div>

@@ -1,0 +1,10 @@
+.drop-box {
+    background: #FFF;
+    border: 2px dashed #0087F7;
+    text-align: center;
+    padding: 50px 10px;
+}
+
+.dragover {
+    border: 2px solid #0087F7;
+}
