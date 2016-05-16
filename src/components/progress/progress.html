@@ -18,8 +18,8 @@
     <div class="col-sm-4">
         <div class="progress-bar" role="progressbar"
              ng-class="{'progress-bar-success': vm.ufile.progress == 100}"
-             ng-style="{width: vm.ufile.progress + '%'}">
-            {{ vm.ufile.progress }} %
+             ng-style="{width: vm.ufile.progress + '%', 'min-width': '2em'}">
+            {{ vm.ufile.progress || '0' }} %
         </div>
     </div>
 
