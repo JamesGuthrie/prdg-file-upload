@@ -4,10 +4,10 @@
     </thead>
     <tbody>
     <tr ng-repeat="file in vm.files">
-        <td><a href="{{file.download_url}}">{{file.name}}</a></td>
+        <td><a href="{{file.download_url}}" target="_blank">{{file.name}}</a></td>
         <td>{{file.file_size | bytes}}</td>
         <td class="text-right">
-            <a class="btn btn-sm btn-primary" href="{{file.download_url}}" target="_blank"><i class="glyphicon glyphicon-save"></i> Download</a>
+            <a class="btn btn-sm btn-primary" href="{{file.download_url}}" download="{{file.name}}"><i class="glyphicon glyphicon-save"></i> Download</a>
             <a class="btn btn-sm btn-danger" ng-click="vm.removeFile(file)"><i class="glyphicon glyphicon-remove"></i> Remove</a>
         </td>
     </tr>
