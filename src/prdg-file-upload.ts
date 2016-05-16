@@ -95,6 +95,9 @@ class PrdgFileUploadController implements IPrdgFileUploadController {
                 UFile.result = response.data;
                 var idx = this.uploading.indexOf(UFile);
                 this.uploading.splice(idx, 1);
+                if (!this.files) {
+                    this.files = [];
+                }
                 if (this.multiple) {
                     this.files = this.files.concat(response.data);
                 } else {

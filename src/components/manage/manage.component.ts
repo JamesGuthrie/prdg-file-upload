@@ -11,7 +11,6 @@ class ManageController implements IManageController {
     public files: File[];
 
     constructor() {
-       //this.files = [];
     }
 
     removeFile(file:File):void {
