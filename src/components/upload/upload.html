@@ -1,4 +1,4 @@
-<div class="bg-white mb" ng-class="{'has-error border-danger': (uploadForm.$error.required) || (hasError() && errorMessage(schemaError()))}">
+<div class="bg-white mb">
     <small class="text-muted" ng-show="form.description" ng-bind-html="form.description"></small>
     <div ngf-drop="vm.enqueue($files)" ngf-select="vm.enqueue($files)" type="file" ngf-multiple="vm.multiple"
          name="file"  ng-required="vm.required"
